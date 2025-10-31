@@ -1,0 +1,57 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Title from "@/components/global/Title.astro";
+import { getLangFromUrl, useTranslatedPath, useTranslations } from "@/i18n/utils";
+// Import the repository README and render it directly
+import README from "../../README.md";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
+---
+
+<BaseLayout
+	seo={{
+		title: "Resources",
+		description: "Curated resources from the README",
+		canonical: translatePath("/resources/"),
+	}}
+>
+	<section>
+		<div class="top-[-10rem]transform-gpu absolute inset-x-0 overflow-hidden blur-3xl sm:top-[-20rem]" aria-hidden="true">
+			<div class="gradient-element"></div>
+		</div>
+		<div class="mx-auto flex flex-col gap-12 px-8 py-24 md:px-12 lg:pt-32 2xl:max-w-7xl">
+			<Title title="Resources" subtitle="Curated links and notes" class="pb-6 pt-16 uppercase" />
+			<div class="prose-styles w-full">
+				<README />
+			</div>
+		</div>
+	</section>
+</BaseLayout>
+
+<style>
+	.gradient-element {
+		@apply relative left-1/2 -z-10 aspect-[1155/678] w-[36.125rem] max-w-none -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#a2d4a0] to-[#aac887] opacity-30 sm:left-[calc(50%-40rem)] sm:w-[72.1875rem];
+		clip-path: polygon(
+			74.1% 44.1%,
+			100% 61.6%,
+			97.5% 26.9%,
+			85.5% 0.1%,
+			80.7% 2%,
+			72.5% 32.5%,
+			60.2% 62.4%,
+			52.4% 68.1%,
+			47.5% 58.3%,
+			45.2% 34.5%,
+			27.5% 76.7%,
+			0.1% 64.9%,
+			17.9% 100%,
+			27.6% 76.8%,
+			76.1% 97.7%,
+			74.1% 44.1%
+		);
+	}
+</style>
+
+

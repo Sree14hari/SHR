@@ -15,6 +15,10 @@ let pages = [
 		title: "Home",
 		url: "/",
 	},
+	{
+		title: "Resources",
+		url: "/resources/",
+	},
 	// {
 	// 	title: "Services",
 	// 	url: "/services",
@@ -273,7 +277,7 @@ const { pathname } = Astro.url;
 		transition: all 0.5s ease;
 	}
 	.collapsed .resizable:before {
-		opacity: 1;
+		opacity: 0;
 	}
 	nav a .menu-item-container {
 		border-radius: 0.45rem;
@@ -336,7 +340,7 @@ const { pathname } = Astro.url;
 					pageLinksUl.classList.add("collapsed");
 				},
 			})
-			.to("header .nav-container", { width: 125 })
+			.to("header .nav-container", { width: 170 })
 			.to(
 				pageLinksUl,
 				{
@@ -344,12 +348,12 @@ const { pathname } = Astro.url;
 						const pathName = window.location.pathname;
 
 						if (pathName === "/" || pathName === "/it/") {
-							return "9.5rem";
+							return "11rem";
 						} else if (pathName.startsWith("/blog") || pathName.startsWith("/it/blog")) {
-							return "3.5rem";
+							return "5rem";
 						}
 
-						return "-3.5rem";
+						return "-1.5rem";
 					},
 				},
 				"<",
