@@ -1,17 +1,17 @@
 ---
+import PrivacyPage from "@/components/infopages/Privacy.astro";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import type { AstroSeoProps } from "@astrolib/seo";
-import Articles from "@components/blog/Articles.astro";
 
 const seo: AstroSeoProps = {
 	title: "Authors - Sreehari R",
 	description:
 		"Machine Learning | DeepLearning | CSE (AI & ML) Undergrad",
-	canonical: "https://sree14hari.work/blog/",
+	canonical: "https://sree14hari.work/it/privacy",
 	
 };
 ---
 
 <BaseLayout seo={seo}>
-	<Articles />
+	<PrivacyPage />
 </BaseLayout>

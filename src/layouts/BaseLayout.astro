@@ -20,42 +20,42 @@ const lang = getLangFromUrl(Astro.url);
 const shareImage = new URL("/images/meta/mintaka_share.gif", Astro.site).toString();
 
 const defaultSeo: AstroSeoProps = {
-	title: "Web Agency Leading in Performant Web Design Solutions - Mintaka Studio",
+	title: "Sreehari R - Machine Learning | DeepLearning ",
 	description:
-		"Mintaka Studio excels in creating fast, user-friendly websites with a focus on aesthetic design and SEO optimization, ensuring a standout online presence",
-	canonical: "https://mintaka.co",
-	openGraph: {
-		url: "https://mintaka.co",
-		title: "Web Agency Leading in Performant Web Design Solutions - Mintaka Studio",
-		description:
-			"Mintaka Studio excels in creating fast, user-friendly websites with a focus on aesthetic design and SEO optimization, ensuring a standout online presence",
-		images: [
-			{
-				url: shareImage,
-				width: 1200,
-				height: 630,
-				alt: "Social open graph",
-				type: "image/gif",
-			},
-			{
-				url: shareImage,
-				width: 4096,
-				height: 4096,
-				alt: "Twitter open graph",
-				type: "image/gif",
-			},
-		],
-		site_name: "Mintaka",
-	},
-	twitter: {
-		handle: "@mintakastudio",
-		site: "@mintakastudio",
-		cardType: "summary_large_image",
-	},
+		"“I’m Sreehari — a passionate AI and Deeplearning researcher turning ideas into intelligent, beautifully crafted experiences",
+	canonical: "https://sree14hari.work",
+	// openGraph: {
+	// 	url: "https://mintaka.co",
+	// 	title: "Web Agency Leading in Performant Web Design Solutions - Mintaka Studio",
+	// 	description:
+	// 		"Mintaka Studio excels in creating fast, user-friendly websites with a focus on aesthetic design and SEO optimization, ensuring a standout online presence",
+	// 	images: [
+	// 		{
+	// 			url: shareImage,
+	// 			width: 1200,
+	// 			height: 630,
+	// 			alt: "Social open graph",
+	// 			type: "image/gif",
+	// 		},
+	// 		{
+	// 			url: shareImage,
+	// 			width: 4096,
+	// 			height: 4096,
+	// 			alt: "Twitter open graph",
+	// 			type: "image/gif",
+	// 		},
+	// 	],
+	// 	site_name: "Mintaka",
+	// },
+	// twitter: {
+	// 	handle: "@mintakastudio",
+	// 	site: "@mintakastudio",
+	// 	cardType: "summary_large_image",
+	// },
 	additionalMetaTags: [
 		{
 			name: "publisher",
-			content: "Mintaka Studio",
+			content: "SHR",
 		},
 	],
 };
@@ -66,7 +66,7 @@ const seo = {
 };
 
 function cursorFollowerActive() {
-	const paths = ["", "/", "/it/", "/it"];
+	const paths = ["", "/", "/jp/", "/jp"];
 	return paths.includes(pathname);
 }
 ---

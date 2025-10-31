@@ -7,7 +7,7 @@ import BaseLayout from "@layouts/BaseLayout.astro";
 export async function getStaticPaths() {
 	const allPosts = (await getCollection("posts")).filter((post) => {
 		const [postLang, ...slug] = post.slug.split("/");
-		return postLang === "en";
+		return postLang === "jp";
 	});
 
 	const uniqueTags = [...new Set(allPosts.flatMap((post) => post.data.tags))];
@@ -27,15 +27,13 @@ export async function getStaticPaths() {
 		};
 	});
 }
-
 const { tag } = Astro.params;
 const { posts } = Astro.props;
 
 const seo: AstroSeoProps = {
-	title: "Authors - Sreehari R",
-	description:
-		"Machine Learning | DeepLearning | CSE (AI & ML) Undergrad",	
-	canonical: `https://sree14hari.work/tags/${tag}/`,
+	title: `${tag} |SHR`,
+	description: `Machine Learning | Flutter | CSE (AI & ML) Undergrad `,
+	canonical: `https://sree14hari.work/jp/tags/${tag}/`,
 };
 ---
 

@@ -1,7 +1,9 @@
 ---
 import { getCollection } from "astro:content";
+
 import type { AstroSeoProps } from "@astrolib/seo";
-import MarkdownPostLayout from "../../layouts/MarkdownPostLayout.astro";
+
+import MarkdownPostLayout from "../../../layouts/MarkdownPostLayout.astro";
 
 export async function getStaticPaths() {
 	const projectsEntries = await getCollection("projects");
@@ -11,7 +13,7 @@ export async function getStaticPaths() {
 			const [lang, ...slug] = entry.slug.split("/");
 			return { params: { lang, slug: slug.join("/") || undefined }, props: entry };
 		})
-		.filter((entry) => entry.params.lang === "en");
+		.filter((entry) => entry.params.lang === "jp");
 }
 
 const entry = Astro.props;
@@ -21,7 +23,7 @@ const seo: AstroSeoProps = {
 	title: "Authors - Sreehari R",
 	description:
 		"Machine Learning | DeepLearning | CSE (AI & ML) Undergrad",	
-	canonical: `https://sree14hari.work/work/${entry.slug}/`,
+	canonical: `https://sree14hari.work/jp/work/${entry.slug}/`,
 	
 };
 ---
