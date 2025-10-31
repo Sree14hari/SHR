@@ -4,22 +4,22 @@
 	"display": "standalone",
 	"scope": "/",
 	"start_url": "/",
-	"description": "Web Agency Leading in Performant Web Design Solutions - Mintaka Studio",
-	"name": "Mintaka",
-	"short_name": "Mintaka",
+	"description": "Machine Learning | Deep Learning | CSE (AI & ML) Undergrad",
+	"name": "Sreehari R",
+	"short_name": "SHR",
 	"icons": [
 		{
-			"src": "/pwa-64x64.png",
-			"sizes": "64x64",
+			"src": "/favicon-32x32.png",
+			"sizes": "32x32",
 			"type": "image/png"
 		},
 		{
-			"src": "/pwa-192x192.png",
+			"src": "/android-chrome-192x192.png",
 			"sizes": "192x192",
 			"type": "image/png"
 		},
 		{
-			"src": "/pwa-512x512.png",
+			"src": "/android-chrome-512x512.png",
 			"sizes": "512x512",
 			"type": "image/png"
 		}
