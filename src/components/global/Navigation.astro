@@ -45,13 +45,14 @@ const { pathname } = Astro.url;
 
 <header>
 	<a href={translatePath("/")} aria-label="Home" class="logo absolute z-50 flex h-[4.5rem] items-center md:h-[5.9rem]">
+		<img src="/Sreehari R.svg" alt="Home" class="h-7 md:h-9" />
 		<svg
 			version="1.1"
 			xmlns="http://www.w3.org/2000/svg"
 			xmlns:xlink="http://www.w3.org/1999/xlink"
 			viewBox="0 0 2809.6 545.3"
 			xml:space="preserve"
-			class="logo-svg h-7 w-36 md:h-9"
+			class="logo-svg hidden h-7 w-36 md:h-9"
 			fill="transparent"
 			stroke="currentColor"
 			stroke-width="10">
@@ -311,14 +312,18 @@ const { pathname } = Astro.url;
 	gsap.registerPlugin(DrawSVGPlugin, ScrollTrigger);
 
 	function init() {
-		gsap.timeline({
-			defaults: {
-				duration: 1,
-				ease: "power2.out",
-			},
-		})
-			.from(".logo-svg path", { drawSVG: 0 })
-			.to(".logo-svg path", { fill: "#000", duration: 2 }, "<+=0.5");
+		const logoPaths = document.querySelectorAll(".logo-svg path");
+		if (logoPaths.length) {
+			gsap
+				.timeline({
+					defaults: {
+						duration: 1,
+						ease: "power2.out",
+					},
+				})
+				.from(logoPaths, { drawSVG: 0 })
+				.to(logoPaths, { fill: "#000", duration: 2 }, "<+=0.5");
+		}
 
 		let isHoveringMenu = false;
 		let menuCollapsed = false;
