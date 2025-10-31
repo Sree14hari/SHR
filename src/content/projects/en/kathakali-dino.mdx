@@ -1,0 +1,122 @@
+---
+pubDate: 2024-10-17
+author:
+    name: Sreehari R
+    link: /author/shr
+title: Kathakali-Mudra_DinoV3 Vision Transformer
+description: "A computer vision project for recognizing and classifying Kathakali classical dance mudras (hand gestures) using Meta's DINOv3 vision transformer model."
+link: https://github.com/Sree14hari/Kathakali-Mudra_DinoV3.git
+image:
+    source: "@assets/images/projects/kathakali.png"
+    alt: "Screenshot of Kathakali"
+---
+
+# Kathakali Mudra Recognition with DINOv3
+
+A computer vision project for recognizing and classifying **Kathakali** classical dance mudras (hand gestures) using Meta's **DINOv3** vision transformer model.
+
+## 📖 Overview
+
+Kathakali is a highly stylized classical Indian dance-drama from Kerala, known for its elaborate costumes, detailed gestures, and expressive movements. Central to this art form are the intricate hand gestures called **Mudras**, which form a sophisticated vocabulary for storytelling. This project leverages state-of-the-art computer vision to automatically recognize and classify these mudras, serving as a tool for learning, preservation, and digital analysis of this ancient art form.
+
+The project utilizes **DINOv3**, Meta AI's self-supervised vision transformer, fine-tuned specifically for Kathakali mudra recognition.
+
+## ✨ Features
+
+*   **Accurate Mudra Classification:** Identifies single-hand (Asamyukta) and combined-hand (Samyukta) Kathakali mudras from images with high precision
+*   **State-of-the-Art Backbone:** Powered by DINOv3's powerful self-supervised visual features
+*   **Multiple Inference Modes:** 
+  - Single image classification
+  - Batch processing for multiple images
+  - Real-time webcam demonstration
+*   **Transfer Learning:** Leverages pre-trained DINOv3 weights for efficient training with limited data
+*   **Modular Architecture:** Clean, well-organized code for easy experimentation and extension
+
+## 🛠️ Installation
+
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/Sree14hari/Kathakali-Mudra_DinoV3.git
+    cd Kathakali-Mudra_DinoV3
+    ```
+
+2.  **Create and activate a virtual environment:**
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # On Windows: venv\Scripts\activate
+    ```
+
+3.  **Install dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+## 🚀 Quick Start
+
+### 1. Data Preparation
+Organize your dataset in the following structure:
+```
+data/
+  train/
+    pataka/
+      image_001.jpg
+      image_002.jpg
+      ...
+    tripataka/
+    mayura/
+    ...
+  val/
+    pataka/
+    tripataka/
+    ...
+  test/
+    pataka/
+    tripataka/
+    ...
+```
+## 🧠 Model Architecture
+
+This project uses **DINOv3** (Vision Transformer) as the feature extractor with a custom classification head:
+
+- **Backbone:** DINOv3 ViT-B/14 or ViT-L/14
+- **Feature Extraction:** Self-supervised pre-trained weights
+- **Classifier:** Custom MLP head adapted for mudra classification
+- **Input Resolution:** 224×224 or 518×518 pixels
+
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- **Meta AI** for the DINOv3 model and pre-trained weights
+- Kathakali artists and researchers who contributed to mudra datasets
+- The open-source community for PyTorch, OpenCV, and other essential libraries
+- Kerala Kalamandalam and other institutions preserving Kathakali heritage
+
+## 🤝 Contributing
+
+We welcome contributions to improve Kathakali mudra recognition! Please feel free to:
+
+1. Report bugs and feature requests via [GitHub Issues](https://github.com/Sree14hari/Kathakali-Mudra_DinoV3/issues)
+2. Submit pull requests for improvements
+3. Share additional mudra datasets or annotations
+4. Improve documentation and examples
+
+**Development workflow:**
+```bash
+git checkout -b feature/your-feature-name
+git commit -m "Add your feature"
+git push origin feature/your-feature-name
+```
+
+## 📮 Contact
+
+For questions or collaborations regarding this project:
+- GitHub: [Sree14hari](https://github.com/Sree14hari)
+- Project Link: [https://github.com/Sree14hari/Kathakali-Mudra_DinoV3](https://github.com/Sree14hari/Kathakali-Mudra_DinoV3)
+
+---
+
+**Bridging centuries-old classical art with cutting-edge computer vision technology** 🎭🤖
