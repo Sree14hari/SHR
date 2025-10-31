@@ -27,10 +27,10 @@ export const ui = {
 			"Exploring the art of intelligence through codeA developer with a designer’s eye and a researcher’s curiosity — building the future, one project at a time.",
 		"hero.scroll": "scroll down to explore more",
 		"websites.title": "Websites",
-		"apps.title": "MachineLearning",
-		"uiux.title": "DeepLearning",
+		"apps.title": "ML",
+		"uiux.title": "DL",
 		"seo.title": "Research",
-		"advertising.title": "Development",
+		"advertising.title": "Dev",
 	
 		"privacy.wip": "Work in progress",
 		"privacy.wip.content": "This page will be updated soon",

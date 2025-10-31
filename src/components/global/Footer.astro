@@ -44,23 +44,27 @@ const translatePath = useTranslatedPath(lang);
 		</div>
 	</div>
 	<div class="relative mt-4 flex w-full items-end justify-between gap-y-4 text-sm lg:text-xl lg:font-normal">
-		<div>©2023 YOUR COMPANY</div>
-		<!-- https://codepen.io/fliseno1k/pen/WNboLBy -->
-		<button
-			id="go-top-button"
-			aria-label="Go to Top"
-			class="fill-transparent transition-colors duration-300 hover:fill-black hover:text-white"
-			data-cursor-hover
-			data-cursor-parallax>
-			<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
-				<g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-					<circle cx="12" cy="12" r="9"></circle><path d="m15 12l-3-3m0 0l-3 3m3-3v6"></path>
-				</g>
-			</svg>
-		</button>
+  <div class="flex items-center gap-2">
+    <span>©2025</span>
+    <img src="/src/assets/logo.svg" alt="Logo" class="h-5 w-auto" />
+  </div>
 
-		<!-- Scroll Up Arrow -->
-	</div>
+  <!-- Scroll Up Button -->
+  <button
+    id="go-top-button"
+    aria-label="Go to Top"
+    class="fill-transparent transition-colors duration-300 hover:fill-black hover:text-white"
+    data-cursor-hover
+    data-cursor-parallax>
+    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
+      <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="9"></circle>
+        <path d="m15 12l-3-3m0 0l-3 3m3-3v6"></path>
+      </g>
+    </svg>
+  </button>
+</div>
+
 </footer>
 
 <style>
