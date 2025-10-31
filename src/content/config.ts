@@ -53,4 +53,5 @@ export const collections = {
 	posts: postsCollection,
 	projects: projectsCollection,
 	authors: authorsCollection,
+	resources: postsCollection,
 };

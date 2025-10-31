@@ -15,28 +15,28 @@ const { class: className } = Astro.props;
 
 const points = [
 	{
-		title: t("websites.title"),
-		content: t("websites.content"),
+		title: (t as any)("websites.title"),
+		content: (t as any)("websites.content"),
 		image: websiteSvg,
 	},
 	{
-		title: t("apps.title"),
-		content: t("apps.content"),
+		title: (t as any)("apps.title"),
+		content: (t as any)("apps.content"),
 		image: mobileSvg,
 	},
 	{
-		title: t("uiux.title"),
-		content: t("uiux.content"),
+		title: (t as any)("uiux.title"),
+		content: (t as any)("uiux.content"),
 		image: designSvg,
 	},
 	{
-		title: t("seo.title"),
-		content: t("seo.content"),
+		title: (t as any)("seo.title"),
+		content: (t as any)("seo.content"),
 		image: seoSvg,
 	},
 	{
-		title: t("advertising.title"),
-		content: t("advertising.content"),
+		title: (t as any)("advertising.title"),
+		content: (t as any)("advertising.content"),
 		image: advertisingSvg,
 	},
 ];

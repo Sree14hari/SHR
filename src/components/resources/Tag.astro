@@ -1,0 +1,36 @@
+---
+import { type CollectionEntry } from "astro:content";
+
+import EntriesOne from "@/components/resources/Entry.astro";
+import Title from "@components/global/Title.astro";
+
+interface Props {
+	tag: string;
+	resources: CollectionEntry<"resources">;
+}
+
+const { tag, resources } = Astro.props as Props;
+---
+
+<section>
+	<div class="mx-auto px-8 py-24 md:px-12 lg:pt-32 2xl:max-w-7xl">
+		<div class="py-10">
+			<Title title={tag} subtitle="tag" class="pb-10 pt-20 uppercase" />
+		</div>
+		<ul class="mt-12 grid grid-cols-1 gap-x-3 gap-y-24 sm:grid-cols-2 lg:mt-24 lg:grid-cols-3 lg:gap-x-6">
+			{
+				resources.map((resource: { slug: string; data: { title: unknown; description: unknown; pubDate: { toString: () => string | any[]; }; author: unknown; image: { source: unknown; }; }; }) => (
+					<EntriesOne
+						url={"/resources/" + resource.slug}
+						title={resource.data.title}
+						description={resource.data.description}
+						alt={resource.data.title}
+						pubDate={resource.data.pubDate.toString().slice(0, 10)}
+						author={resource.data.author}
+						image={resource.data.image.source}
+					/>
+				))
+			}
+		</ul>
+	</div>
+</section>

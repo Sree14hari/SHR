@@ -1,0 +1,17 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import type { AstroSeoProps } from "@astrolib/seo";
+import Articles from "@components/resources/Articles.astro";
+
+const seo: AstroSeoProps = {
+	title: "Authors - Sreehari R",
+	description:
+		"Machine Learning | DeepLearning | CSE (AI & ML) Undergrad",
+	canonical: "https://sree14hari.work/jp/resources/",
+	
+};
+---
+
+<BaseLayout seo={seo}>
+	<Articles />
+</BaseLayout>

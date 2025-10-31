@@ -81,6 +81,8 @@ export const ui = {
 		"blog.title": "Blog",
 		"blog.subtitle": "Tech, Tips, and Typo's!",
 		"blog.gotoproject": "Go to project",
+		"resources.title":"Resources",
+		"resources.subtitle": "link, pdf, and resource!",
 		"footer.newsletter": "Subscribe to",
 		"footer.newsletter2": "our newsletter",
 		"footer.yourmail": "Your email",
@@ -154,6 +156,9 @@ export const ui = {
 	"blog.title": "ブログ",
 	"blog.subtitle": "テック、ヒント、そしてタイプミス！",
 	"blog.gotoproject": "プロジェクトへ",
+	"resources.title": "リソース",
+	"resources.subtitle": "リンク、PDF、そして便利な資料！",
+
 	"footer.newsletter": "ニュースレターを購読する",
 	"footer.newsletter2": "",
 	"footer.yourmail": "あなたのメールアドレス"
