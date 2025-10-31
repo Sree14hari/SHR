@@ -1,0 +1,44 @@
+---
+pubDate: 2025-10-04
+author:
+    name: Sreehari R
+    link: /author/shr
+title: Sharks From Space
+description: "A project for NASA Space Challenge"
+link: https://sharkfromspace.earth/
+image:
+    source: "@assets/images/projects/sharks.png"
+    alt: "Screenshot of ArtisanLens Studio homepage"
+---
+
+# 🦈 サメの採餌予測
+
+機械学習と地理空間解析を用いて、北大西洋における**サメの採餌ホットスポット**を予測するプロジェクトです。
+
+---
+
+## 📌 概要
+- 衛星データと環境データ（海面温度、クロロフィル、水深など）を前処理  
+- **LightGBM** モデルで採餌確率を予測  
+- **GeoPandas** を用いて陸地を除去  
+- **Leaflet.js** によるインタラクティブなヒートマップを作成  
+
+---
+
+## 🚀 特徴
+- 機械学習による採餌確率の推定  
+- GeoJSON 形式の出力（`hotspots.geojson`）  
+- 直感的なヒートマップ可視化  
+
+---
+
+## ⚙️ 技術スタック
+- **Python**（pandas, geopandas, lightgbm）  
+- **Leaflet.js**（可視化）  
+- **Natural Earth** 海岸線シェープファイル  
+
+---
+
+## 📂 出力
+- `hotspots.geojson` — 予測結果の地理空間データ  
+- 予測された採餌エリアのインタラクティブヒートマップ

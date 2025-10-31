@@ -1,0 +1,40 @@
+---
+pubDate: 2024-10-17
+author:
+    name: スリハリ・R
+title: Kathakali-Mudra_DINOv3 Vision Transformer
+description: "Meta社のDINOv3ビジョントランスフォーマーを用いて、カタカリ舞踊のムドラ（手のジェスチャー）を認識・分類するAIプロジェクト。"
+link: https://github.com/Sree14hari/Kathakali-Mudra_DinoV3.git
+image:
+    source: "@assets/images/projects/kathakali.png"
+    alt: "カタカリ・プロジェクトのスクリーンショット"
+---
+
+# Kathakali Mudra Recognition with DINOv3
+
+Meta社の**DINOv3 Vision Transformer**を用いて、インドの伝統舞踊 **カタカリ（Kathakali）** の手の動き「**ムドラ（Mudra）**」を自動認識・分類するコンピュータビジョンプロジェクトです。  
+文化保存や学習支援を目的に、少量データでも高精度な分類を実現します。
+
+---
+
+## ✨ 特徴
+- **高精度なムドラ認識**（片手・両手どちらにも対応）  
+- **DINOv3による強力な特徴抽出**  
+- **単一画像・バッチ・リアルタイム推論対応**  
+- **転移学習とモジュラー設計で拡張性抜群**
+
+---
+
+## ⚙️ モデル構成
+- **バックボーン:** DINOv3 ViT-B/14 または ViT-L/14  
+- **分類ヘッド:** カスタムMLP  
+- **入力サイズ:** 224×224 または 518×518  
+- **フレームワーク:** PyTorch, OpenCV  
+
+---
+
+## 🚀 使い方
+
+- git clone https://github.com/Sree14hari/Kathakali-Mudra_DinoV3.git
+- cd Kathakali-Mudra_DinoV3
+- pip install -r requirements.txt
