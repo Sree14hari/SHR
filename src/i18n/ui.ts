@@ -27,43 +27,45 @@ export const ui = {
 			"Exploring the art of intelligence through codeA developer with a designer’s eye and a researcher’s curiosity — building the future, one project at a time.",
 		"hero.scroll": "scroll down to explore more",
 		"websites.title": "Websites",
-		"apps.title": "Apps",
-		"uiux.title": "UI/UX Design",
-		"seo.title": "SEO",
-		"advertising.title": "Advertising",
+		"apps.title": "MachineLearning",
+		"uiux.title": "DeepLearning",
+		"seo.title": "Research",
+		"advertising.title": "Development",
 	
 		"privacy.wip": "Work in progress",
 		"privacy.wip.content": "This page will be updated soon",
-		"faqs.question1": "What's your favorite programming language?",
+		"faqs.question1": "What's my favorite programming language?",
 		"faqs.answer1":
-			"We love TypeScript for its type safety and modern features, but we're also proficient in Python, JavaScript, and Go.",
-		"faqs.question2": "Do you have a coffee machine in the office?",
-		"faqs.answer2":
-			"Yes, and it's probably the most important piece of equipment we have! We run on caffeine and creativity.",
-		"faqs.question3": "What's your approach to rubber duck debugging?",
+			"I love how simple, powerful, and versatile Python is — it’s perfect for everything from machine learning and AI to backend development and automation. Its clean syntax and vast ecosystem make it my go-to language for experimenting with new ideas and building real-world projects.",
+
+		"faqs.question2": "What kind of projects do I enjoy building the most?",
+		"faqs.answer2":"I enjoy building projects that combine Deep Learning and Machine Learning with real-world utility.I love working on apps that use AI to make everyday tasks smarter — from PDF summarizers and offline AI assistants to agriculture and health-related systems powered by intelligent models. Integrating Flutter for modern interfaces with Python-based ML and Deep Learning models for smart functionality is where I feel most creative and challenged.",
+
+		"faqs.question3": "What technologies do I work with most often?",
 		"faqs.answer3":
-			"We have a collection of rubber ducks, each specialized in different programming languages. They're surprisingly effective at finding bugs!",
+			"I work most often with Flutter, Python, TypeScript, and Machine Learning frameworks.For frontend and app development, I use Flutter and TypeScript to build responsive, interactive UIs — whether it’s for mobile apps or modern web projects. On the backend and AI side, I rely on Python with frameworks like TensorFlow, PyTorch, and OpenCV for Deep Learning, Computer Vision, and NLP. I also love exploring Gemma, Tesseract OCR, and local AI models to create powerful offline intelligent systems.",
+
 		"faqs.question4": "How do you handle merge conflicts?",
-		"faqs.answer4":
-			"With patience, coffee, and sometimes a bit of panic. But mostly with good Git practices and clear communication between team members.",
+		"faqs.answer4": "With calm debugging energy, a few deep breaths, and Git magic. I always make sure to review commits carefully and keep my branches clean — version control peace is key.",
+
 		"faqs.question5": "What's your stance on tabs vs spaces?",
-		"faqs.answer5":
-			"This is a trick question! We use EditorConfig to maintain consistency across the team. But secretly, we're team spaces.",
-		"faqs.question6": "How many monitors do your developers use?",
-		"faqs.answer6":
-			"The correct answer is n+1, where n is the current number of monitors. There's always room for one more screen!",
+		"faqs.answer5": "I’m team spaces — neat, predictable, and clean. But honestly, as long as the code runs flawlessly, I’m happy either way.",
+
+		"faqs.question6": "How many monitors do you use?",
+		"faqs.answer6": "Two for productivity, three for chaos. One runs Flutter, one shows logs, and one is for research, Spotify, or random debugging memes.",
+
 		"faqs.question7": "What's your debugging strategy?",
-		"faqs.answer7":
-			"First we try console.log, then we try proper debugging tools, finally we stare at the code until it confesses its bugs.",
+		"faqs.answer7": "Print statements, breakpoints, and intuition. If all else fails, I just stare at the code until it reveals its secrets — it usually does.",
+
 		"faqs.question8": "How do you celebrate successful deployments?",
-		"faqs.answer8":
-			"With a mix of relief, high-fives, and occasionally pizza. Then we immediately start worrying about the next deployment.",
+		"faqs.answer8": "A quick fist pump, a sip of coffee, and then straight into testing again. Real devs know deployment peace never lasts long.",
+
 		"faqs.question9": "What's your preferred IDE theme?",
-		"faqs.answer9":
-			"Dark theme during the day, darker theme at night. Our developers are like vampires - we avoid bright lights.",
+		"faqs.answer9": "Dark mode always — bright screens and late-night coding don’t mix. JetBrains Mono + Dracula theme = perfection.",
+
 		"faqs.question10": "How do you name your variables?",
-		"faqs.answer10":
-			"We follow strict naming conventions, but sometimes end up with classics like 'finalFinalVersionForReal' and 'thisWillDefinitelyWork'.",
+		"faqs.answer10": "Descriptive, consistent, and sometimes dramatic. From 'finalResult' to 'pleaseWorkThisTime', every name tells a story.",
+
 		"faq.otherquestions": "Other questions?",
 		"thanks.subtitle": "Mail sent successfully",
 		"thanks.title": "Thank you",
@@ -109,25 +111,34 @@ export const ui = {
 	"privacy.wip": "作業中",
 	"privacy.wip.content": "このページは近日中に更新されます",
 	"faqs.question1": "好きなプログラミング言語は何ですか？",
-	"faqs.answer1": "型安全性とモダンな機能のためにTypeScriptが好きですが、Python、JavaScript、Goにも精通しています。",
-	"faqs.question2": "オフィスにコーヒーマシンはありますか？",
-	"faqs.answer2": "はい！ そしてそれはおそらく最も重要な機器です。私たちはカフェインと創造性で動いています。",
-	"faqs.question3": "ラバーダック・デバッグについての考え方は？",
-	"faqs.answer3": "私たちはさまざまなプログラミング言語に特化したラバーダックをコレクションしています。バグ発見に驚くほど効果的です！",
-	"faqs.question4": "マージコンフリクトはどう処理しますか？",
-	"faqs.answer4": "忍耐、コーヒー、そして時々少しのパニックで対処します。でも基本的には良いGitの運用とチーム間の明確なコミュニケーションです。",
-	"faqs.question5": "タブ vs スペースの立場は？",
-	"faqs.answer5": "これはトリッキーな質問ですね！チーム全体で一貫性を保つためにEditorConfigを使用しています。でも内心ではスペース派です。",
-	"faqs.question6": "開発者はモニターを何台使っていますか？",
-	"faqs.answer6": "正解は n+1 台です。n は現在のモニター数。常にもう1台置く余地があります！",
-	"faqs.question7": "デバッグ戦略は何ですか？",
-	"faqs.answer7": "最初に console.log を試し、それでダメなら本格的なデバッガを使い、それでもダメならコードがバグを自白するまで見つめます。",
-	"faqs.question8": "デプロイ成功の祝い方は？",
-	"faqs.answer8": "安堵、ハイタッチ、そして時々ピザでお祝いします。そしてすぐに次のデプロイの心配を始めます。",
+	"faqs.answer1": "Pythonが大好きです。シンプルでありながら強力で汎用性が高く、機械学習やAIからバックエンド開発、自動化まで幅広く活用できます。クリーンな構文と豊富なエコシステムが、実験的なアイデアから実用的なプロジェクトまで、常に頼れる言語です。",
+
+	"faqs.question2": "どんなプロジェクトを作るのが一番好きですか？",
+	"faqs.answer2": "現実世界に役立つディープラーニングや機械学習を組み合わせたプロジェクトを作るのが好きです。PDF要約アプリやオフラインAIアシスタント、農業・医療向けのインテリジェントシステムなど、日常を賢くするAIアプリを作るのが楽しいです。FlutterでモダンなUIを作り、PythonベースのML・DLモデルでスマートな機能を実装する時に、一番創造的でワクワクします。",
+
+	"faqs.question3": "よく使う技術は何ですか？",
+	"faqs.answer3": "主にFlutter、Python、TypeScript、そして機械学習フレームワークを使っています。フロントエンドやアプリ開発ではFlutterとTypeScriptでレスポンシブかつ直感的なUIを作成し、バックエンドやAI分野ではPythonを使ってTensorFlow、PyTorch、OpenCVなどでディープラーニング、コンピュータビジョン、NLPに取り組んでいます。さらに、GemmaやTesseract OCR、ローカルAIモデルなどを使い、オフラインでも動作する高性能な知的システムを探求しています。",
+
+	"faqs.question4": "マージコンフリクトはどう解決しますか？",
+	"faqs.answer4": "落ち着いてデバッグし、深呼吸してからGitの魔法を使います。コミットを丁寧に確認し、ブランチをクリーンに保つことを心がけています。バージョン管理の平和は大切です。",
+
+	"faqs.question5": "タブ派ですか？スペース派ですか？",
+	"faqs.answer5": "スペース派です。整然として予測しやすく、きれいです。でも正直、コードがちゃんと動けばどっちでも幸せです。",
+
+	"faqs.question6": "モニターはいくつ使っていますか？",
+	"faqs.answer6": "生産性のために2台、カオスのために3台です。1台はFlutter、1台はログ、もう1台はリサーチやSpotify、またはデバッグ用のミーム表示に使います。",
+
+	"faqs.question7": "デバッグの戦略は？",
+	"faqs.answer7": "print文、ブレークポイント、そして直感。どうしても解決しない時は、コードをじっと見つめます。するとたいてい、向こうから答えを教えてくれます。",
+
+	"faqs.question8": "デプロイ成功の時はどうお祝いしますか？",
+	"faqs.answer8": "軽くガッツポーズして、コーヒーを一口飲み、すぐにテストを再開します。真の開発者は、デプロイの平穏が長く続かないことを知っています。",
+
 	"faqs.question9": "お気に入りのIDEテーマは？",
-	"faqs.answer9": "昼はダークテーマ、夜はもっとダークなテーマ。私たちはヴァンパイアのように明るい光を避けます。",
-	"faqs.question10": "変数名の付け方は？",
-	"faqs.answer10": "厳格な命名規則に従っていますが、時々「finalFinalVersionForReal」や「thisWillDefinitelyWork」といった名作が生まれます。",
+	"faqs.answer9": "もちろんダークモード。明るい画面と夜更かしコーディングは相性最悪です。JetBrains Mono + Draculaテーマは最高の組み合わせです。",
+
+	"faqs.question10": "変数名はどうやって決めていますか？",
+	"faqs.answer10": "わかりやすく、一貫性があり、時にはドラマチックに。'finalResult'から'pleaseWorkThisTime'まで、すべての変数名に物語があります。",
 	"faq.otherquestions": "他の質問はありますか？",
 	"thanks.subtitle": "メールは正常に送信されました",
 	"thanks.title": "ありがとうございます",
