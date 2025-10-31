@@ -14,7 +14,7 @@ const translatePath = useTranslatedPath(lang);
 	</div>
 	<div class="mx-auto">
 		<Title class="pb-10 pt-20 uppercase" title={t("contact.title")} subtitle={t("contact.subtitle")} />
-		<form data-static-form-name="contact" class="mx-auto max-w-2xl pt-12 lg:pt-20">
+		<form data-static-form-name="contact" class="mx-auto max-w-2xl pt-12 lg:pt-20" action="https://formspree.io/f/mblpzwwk" method="POST">
 			<div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
 				<div class="form-field sm:col-span-2">
 					<label for="name" class="form-label">{t("contact.name")}*</label>
@@ -48,6 +48,7 @@ const translatePath = useTranslatedPath(lang);
 					</button>
 				</div>
 			</div>
+			<p id="contact-status" class="mt-4 pl-1 text-sm text-slate-700" aria-live="polite"></p>
 		</form>
 	</div>
 </section>

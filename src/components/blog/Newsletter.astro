@@ -7,20 +7,22 @@ const t = useTranslations(lang);
 const translatePath = useTranslatedPath(lang);
 ---
 
-<div class:list={["relative mt-8 h-20 max-w-[30rem] leading-6 lg:max-w-[35rem]", className]}>
-	<div class="origin-left-center squircle-bg-light absolute h-full w-full scale-100 transform rounded-xl bg-slate-200"></div>
-	<form class="h-full">
+
+<div class:list={["relative mt-8 max-w-[30rem] leading-6 lg:max-w-[35rem]", className]}>
+	<div class="origin-left-center squircle-bg-light absolute top-0 h-14 w-full scale-100 transform rounded-xl bg-slate-200"></div>
+	<form class="h-14" action="https://formspree.io/f/xeoprnvy" method="POST">
 		<input
 			type="email"
-			name="EMAIL"
+			name="email"
 			autocomplete="email"
 			placeholder={t("footer.yourmail")}
+			required
 			class="pointer-events-auto relative m-0 h-full w-full cursor-text border-0 bg-transparent px-5 py-2 text-xl font-normal not-italic outline-none placeholder:text-gray-400 focus:ring-transparent"
 		/>
 		<button
 			type="submit"
 			aria-label="Send newsletter form button"
-			class="pointer-events-auto absolute right-5 top-1/2 m-0 inline-block h-8 w-8 -translate-y-1/2 scale-100 transform cursor-pointer bg-transparent p-0 text-center font-normal normal-case not-italic">
+			class="pointer-events-auto absolute right-5 top-7 m-0 inline-block h-8 w-8 -translate-y-1/2 scale-100 transform cursor-pointer bg-transparent p-0 text-center font-normal normal-case not-italic">
 			<svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<path
 					fill-rule="evenodd"
@@ -31,7 +33,7 @@ const translatePath = useTranslatedPath(lang);
 			</svg>
 		</button>
 	</form>
-	<div class="mx-4 mb-0 mt-2 text-black"></div>
+	<div class="mx-1 mt-3 text-sm text-slate-700" id="newsletter-status" aria-live="polite"></div>
 </div>
 
 <style>
@@ -42,3 +44,34 @@ const translatePath = useTranslatedPath(lang);
 		mask-image: paint(squircle);
 	}
 </style>
+
+<script>
+	function initNewsletter() {
+		const form = document.querySelector('form[action="https://formspree.io/f/xeoprnvy"]');
+		const status = document.getElementById("newsletter-status");
+		if (!form || !status) return;
+
+		form.addEventListener("submit", async (e) => {
+			e.preventDefault();
+			const data = new FormData(form as HTMLFormElement);
+			try {
+				const res = await fetch("https://formspree.io/f/xeoprnvy", {
+					method: "POST",
+					headers: { Accept: "application/json" },
+					body: data,
+				});
+				if (res.ok) {
+					(status as HTMLElement).textContent = "Thanks! You’re subscribed.";
+					(form as HTMLFormElement).reset();
+				} else {
+					(status as HTMLElement).textContent = "Something went wrong. Please try again.";
+				}
+			} catch (err) {
+				(status as HTMLElement).textContent = "Network error. Please try again.";
+			}
+		});
+	}
+
+	document.removeEventListener("DOMContentLoaded", initNewsletter);
+	document.addEventListener("DOMContentLoaded", initNewsletter);
+</script>
