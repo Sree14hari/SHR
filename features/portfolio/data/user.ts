@@ -50,7 +50,7 @@ export const USER: User = {
     discord: 'https://discord.com/users/s_ree.har_i',
     instagram: 'https://www.instagram.com/s_ree.har_i/',
   },
-  ogImage: 'https://res.cloudinary.com/chef0111/image/upload/ogImage.png',
+  ogImage: '/dp.jpg',
   timeZone: 'Asia/Kolkata',
   keywords: [
     'Sreehari',
