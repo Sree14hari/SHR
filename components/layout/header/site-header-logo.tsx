@@ -43,7 +43,7 @@ function BrandMotion() {
   return (
     <div data-visible={visible} className="group/motion relative">
       <BrandLogo
-        fillOpacity={0}
+
         aria-hidden="true"
         className="stroke-foreground no-focus absolute top-0 left-0 opacity-100 transition-opacity duration-300 select-none group-data-[visible=true]/motion:opacity-0"
         tabIndex={-1}
