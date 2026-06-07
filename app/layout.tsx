@@ -38,17 +38,16 @@ export const metadata: Metadata = {
   keywords: SITE_INFO.keywords,
   authors: [
     {
-      name: 'chef0111',
+      name: USER.displayName,
       url: SITE_INFO.url,
     },
   ],
-  creator: 'chef0111',
+  creator: USER.displayName,
   openGraph: {
     siteName: SITE_INFO.name,
     url: '/',
     type: 'profile',
     locale: 'en_US',
-    alternateLocale: ['vi_VN'],
     firstName: USER.firstName,
     lastName: USER.lastName,
     username: USER.username,
