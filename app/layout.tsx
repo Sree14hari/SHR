@@ -1,0 +1,149 @@
+import './globals.css';
+
+import { Analytics } from '@vercel/analytics/next';
+import { SpeedInsights } from '@vercel/speed-insights/next';
+import type { Metadata, Viewport } from 'next';
+import { Geist } from 'next/font/google';
+import Script from 'next/script';
+import type { WebSite, WithContext } from 'schema-dts';
+
+import { ScrollToTop } from '@/components/cheffolio/scroll-to-top';
+import { Toaster } from '@/components/ui/sonner';
+import { TooltipProvider } from '@/components/ui/tooltip';
+import { fontVariables } from '@/config/font';
+import { META_THEME_COLORS, SITE_INFO, X_USERNAME } from '@/config/site';
+import { ThemeProvider } from '@/context/theme-provider';
+import { USER } from '@/features/portfolio/data/user';
+import { cn } from '@/lib/utils';
+
+const geist = Geist({ subsets: ['latin'], variable: '--font-sans' });
+
+function getWebSiteJsonLd(): WithContext<WebSite> {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: SITE_INFO.name,
+    url: SITE_INFO.url,
+    alternateName: [USER.username],
+  };
+}
+
+export const metadata: Metadata = {
+  metadataBase: new URL(SITE_INFO.url),
+  title: {
+    template: `%s – ${SITE_INFO.name}`,
+    default: `${SITE_INFO.name}`,
+  },
+  description: SITE_INFO.description,
+  keywords: SITE_INFO.keywords,
+  authors: [
+    {
+      name: 'chef0111',
+      url: SITE_INFO.url,
+    },
+  ],
+  creator: 'chef0111',
+  openGraph: {
+    siteName: SITE_INFO.name,
+    url: '/',
+    type: 'profile',
+    locale: 'en_US',
+    alternateLocale: ['vi_VN'],
+    firstName: USER.firstName,
+    lastName: USER.lastName,
+    username: USER.username,
+    gender: USER.gender,
+    images: [
+      {
+        url: SITE_INFO.ogImage,
+        width: 1140,
+        height: 720,
+        alt: SITE_INFO.name,
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    site: X_USERNAME,
+    creator: X_USERNAME,
+    images: [SITE_INFO.ogImage],
+  },
+  icons: {
+    icon: '/favicon.png',
+    apple: '/favicon.png',
+  },
+  robots: {
+    googleBot: {
+      'max-snippet': -1,
+      'max-image-preview': 'large',
+    },
+  },
+};
+
+const darkModeScript = String.raw`
+  try {
+    if (localStorage.theme === 'dark' || ((!('theme' in localStorage) || localStorage.theme === 'system') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '${META_THEME_COLORS.dark}')
+    }
+  } catch (_) {}
+
+  try {
+    if (/(Mac|iPhone|iPod|iPad)/i.test(navigator.platform)) {
+      document.documentElement.classList.add('os-macos')
+    }
+  } catch (_) {}
+`;
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  viewportFit: 'cover',
+  themeColor: META_THEME_COLORS.light,
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html
+      lang="en"
+      className={cn(
+        fontVariables,
+        'h-full antialiased',
+        'font-sans',
+        geist.variable
+      )}
+      suppressHydrationWarning
+    >
+      <head>
+        <Script id="theme-init" strategy="beforeInteractive">
+          {darkModeScript}
+        </Script>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(getWebSiteJsonLd()).replace(/</g, '\\u003c'),
+          }}
+        />
+      </head>
+      <body className="bg-background flex min-h-dvh flex-col overflow-x-hidden">
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <TooltipProvider>
+            {children}
+            <ScrollToTop />
+          </TooltipProvider>
+          <Toaster closeButton position="bottom-center" />
+        </ThemeProvider>
+        <Analytics />
+        <SpeedInsights />
+      </body>
+    </html>
+  );
+}
