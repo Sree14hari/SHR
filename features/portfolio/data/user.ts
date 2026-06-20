@@ -8,11 +8,11 @@ export const USER: User = {
   alternateName: ['Sreehari R', 'sree14hari', 'sreehari'],
   gender: 'male',
   pronouns: 'he/him',
-  bio: 'AI & ML Engineering Student | Deep Learning • Explainable AI • Transformer Models',
+  bio: 'AI Researcher | Mechanistic Interpretability • Explainable AI • Trustworthy AI',
   flipSentences: [
-    'AI & ML Engineering Student',
-    'Webmaster @ IEEE SB SBCE',
-    'Deep Learning • Explainable AI • Transformer Models',
+    'B.Tech AI & ML Student (2023–2027)',
+    'IEEE Published Author • Best Paper Award Winner',
+    'Researching interpretable and reliable deep learning systems for healthcare and scientific applications.',
   ],
   address: 'Alappuzha, Kerala, India',
   phoneNumber: 'KzkxIDg4NDg1Mzg5Njk=', // E.164 format, base64 encoded (https://t.io.vn/base64-string-converter)
