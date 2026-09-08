@@ -39,7 +39,7 @@ export const RESEARCH: Research[] = [
     title: 'Boosted ViT for Laryngeal and Neurological Voice Disorders',
     period: {
       start: '2025',
-      end: '2025',
+      end: '2026',
     },
     skills: [
       'PyTorch',
@@ -56,16 +56,17 @@ export const RESEARCH: Research[] = [
       'Mel-Spectrogram Analysis',
       'Research',
     ],
-    status: 'accepted',
+    status: 'published',
     description: `Developed an advanced deep learning framework for automatic classification of six laryngeal and neurological voice disorders using mel-spectrogram representations.
 - Fine-tuned and evaluated three state-of-the-art Vision Transformer architectures: DINOv3, MaxViT, and EVA-02.
 - Proposed a Boosted Weighted Voting ensemble enhanced with Temperature Scaling calibration to improve prediction reliability and classification accuracy.
-- Achieved 86.49% classification accuracy across six pathological voice conditions using data from the Saarbrücken Voice Database (SVD) and Italian Parkinson's Voice and Speech datasets.
-- Submitted to Neural Computing and Applications (Springer, Q1 Journal) and currently undergoing peer-review revision process.
+- Achieved 86.84% classification accuracy across six pathological voice conditions using data from the Saarbrücken Voice Database (SVD) and Italian Parkinson's Voice and Speech datasets.
+- Published in **Neural Computing and Applications** (Springer, Q1 Journal).
+- Code available on [GitHub](https://github.com/Sree14hari/Spectrogram-VisionTransformer).
 `,
     logo: `https://cdn.dribbble.com/userupload/42562034/file/original-40c6f8a325aaf2964eb06167feadc78b.png`,
     isExpanded: false,
-    link: 'https://github.com/Sree14hari/Spectrogram-VisionTransformer',
+    link: 'https://doi.org/10.1007/s00521-026-12393-5',
   },
   {
     id: 'crda',

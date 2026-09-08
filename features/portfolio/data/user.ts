@@ -11,7 +11,7 @@ export const USER: User = {
   bio: 'AI Researcher | Mechanistic Interpretability • Explainable AI • Trustworthy AI',
   flipSentences: [
     'B.Tech AI & ML Student (2023–2027)',
-    'IEEE Published Author • Best Paper Award Winner',
+    'Springer Nature & IEEE Published Author • Best Paper Award Winner',
     'Researching interpretable and reliable deep learning systems for healthcare and scientific applications.',
   ],
   address: 'Alappuzha, Kerala, India',
@@ -35,6 +35,7 @@ export const USER: User = {
     'Machine Learning',
     'Data Science',
   ],
+  resume: '/resume_shr.pdf',
   about: `
 - **B.Tech AI & ML Student** passionate about building software, AI solutions, and digital products.
 - Experienced with **Flutter**, **Python**, **Next.js**, and modern development tools.
