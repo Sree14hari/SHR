@@ -39,7 +39,7 @@ export const USER: User = {
 - **B.Tech AI & ML Student** passionate about building software, AI solutions, and digital products.
 - Experienced with **Flutter**, **Python**, **Next.js**, and modern development tools.
 - Focused on creating scalable, user-friendly, and impactful applications.
-- Founder of **R3CTR**, creator of **[KTU Hub](https://ktuhub.site)**, and **[PaperLab](https://paperlab.r3actr.work/)**.
+- Co-founder of **R3ACTR**, creator of **[KTU Hub](https://ktuhub.site)**, and **[PaperLab](https://paperlab.r3actr.work/)**.
   `,
   avatar: '/dp.jpg',
   socialLinks: {
