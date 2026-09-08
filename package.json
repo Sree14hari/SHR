@@ -1,8 +1,8 @@
 {
-  "name": "cheffolio",
+  "name": "shrfolio",
   "version": "0.1.0",
-  "description": "A minimal, shadcn/ui-inspired dev portfolio.",
-  "homepage": "https://giabao.dev",
+  "description": "Sreehari R · AI & ML Engineering Student & Researcher Portfolio",
+  "homepage": "https://sree14hari.me",
   "license": "MIT",
   "repository": {
     "type": "git",

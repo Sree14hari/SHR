@@ -4,8 +4,8 @@ import Link from 'next/link';
 import { cn } from '@/lib/utils';
 
 interface BrandPropsWithSvg extends Omit<
-  React.ComponentProps<'svg'>,
-  'xmlns' | 'viewBox' | 'fill' | 'href'
+  React.ComponentProps<'img'>,
+  'src' | 'alt' | 'href'
 > {
   href?: Route | null;
   showText?: boolean;

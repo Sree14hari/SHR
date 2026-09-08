@@ -1,9 +1,10 @@
 'use client';
 
 import { motion, AnimatePresence } from 'motion/react';
+import type { Variants } from 'motion/react';
 import { useEffect, useState } from 'react';
 
-const pathVariants = {
+const pathVariants: Variants = {
   hidden: {
     pathLength: 0,
     fill: 'rgba(0, 0, 0, 0)',

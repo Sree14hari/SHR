@@ -1,22 +1,22 @@
 {
-  "short_name": "giabao.dev",
-  "name": "giabao.dev",
-  "description": "A minimalist, shadcn/ui-inspired dev portfolio of @chef0111.",
+  "short_name": "Sreehari R",
+  "name": "Sreehari R Portfolio",
+  "description": "Sreehari R · AI & ML Engineering Student. AI Researcher & Co-founder of R3ACTR.",
   "icons": [
     {
-      "src": "https://res.cloudinary.com/chef0111/image/upload/cheffolio.svg",
+      "src": "/shr logo.svg",
       "type": "image/svg+xml",
       "sizes": "any",
       "purpose": "any"
     },
     {
-      "src": "https://res.cloudinary.com/chef0111/image/upload/icon-192x192.png",
+      "src": "/favicon.png",
       "type": "image/png",
       "sizes": "192x192",
       "purpose": "any"
     },
     {
-      "src": "https://res.cloudinary.com/chef0111/image/upload/icon-512x512.png",
+      "src": "/favicon.png",
       "type": "image/png",
       "sizes": "512x512",
       "purpose": "any"
@@ -26,30 +26,6 @@
   "start_url": "/?utm_source=pwa",
   "display": "standalone",
   "scope": "/",
-  "screenshots": [
-    {
-      "src": "https://res.cloudinary.com/chef0111/image/upload/v3/screenshot-mobile-dark.webp",
-      "type": "image/webp",
-      "sizes": "480x1002",
-      "form_factor": "narrow"
-    },
-    {
-      "src": "https://res.cloudinary.com/chef0111/image/upload/v3/screenshot-mobile-light.webp",
-      "type": "image/webp",
-      "sizes": "480x1002",
-      "form_factor": "narrow"
-    },
-    {
-      "src": "https://res.cloudinary.com/chef0111/image/upload/v3/screenshot-desktop-dark.webp",
-      "type": "image/webp",
-      "sizes": "1140x720",
-      "form_factor": "wide"
-    },
-    {
-      "src": "https://res.cloudinary.com/chef0111/image/upload/v3/screenshot-desktop-light.webp",
-      "type": "image/webp",
-      "sizes": "1140x720",
-      "form_factor": "wide"
-    }
-  ]
+  "theme_color": "#09090b",
+  "background_color": "#09090b"
 }

@@ -6,7 +6,7 @@ import {
   IntroItemIcon,
   IntroItemLink,
 } from '@/components/cheffolio/intro-item';
-import { Button } from '@/components/ui/button';
+import { buttonVariants } from '@/components/ui/button';
 import { USER } from '@/features/portfolio/data/user';
 
 export function ResumeItem() {
@@ -19,22 +19,27 @@ export function ResumeItem() {
       <IntroItemContent>
         <IntroItemLink
           href={USER.resume}
-          aria-label="Personal resume"
+          aria-label="Resume"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Personal Resume
+          Resume
         </IntroItemLink>
       </IntroItemContent>
 
       <div className="-translate-x-3 opacity-0 transition-opacity ease-out group-hover:opacity-100">
-        <Button
-          variant="ghost"
-          size="icon-xs"
-          className="text-muted-foreground hover:text-foreground"
+        <a
+          href={USER.resume}
+          download="resume_shr.pdf"
+          aria-label="Download resume"
+          className={buttonVariants({
+            variant: 'ghost',
+            size: 'icon-xs',
+            className: 'text-muted-foreground hover:text-foreground',
+          })}
         >
           <DownloadIcon />
-        </Button>
+        </a>
       </div>
     </IntroItem>
   );

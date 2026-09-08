@@ -8,11 +8,11 @@ export const USER: User = {
   alternateName: ['Sreehari R', 'sree14hari', 'sreehari'],
   gender: 'male',
   pronouns: 'he/him',
-  bio: 'AI & ML Engineering Student | Deep Learning • Explainable AI • Transformer Models',
+  bio: 'AI Researcher | Mechanistic Interpretability • Explainable AI • Trustworthy AI',
   flipSentences: [
-    'AI & ML Engineering Student',
-    'Webmaster @ IEEE SB SBCE',
-    'Deep Learning • Explainable AI • Transformer Models',
+    'B.Tech AI & ML Student (2023–2027)',
+    'Springer Nature & IEEE Published Author • Best Paper Award Winner',
+    'Researching interpretable and reliable deep learning systems for healthcare and scientific applications.',
   ],
   address: 'Alappuzha, Kerala, India',
   phoneNumber: 'KzkxIDg4NDg1Mzg5Njk=', // E.164 format, base64 encoded (https://t.io.vn/base64-string-converter)
@@ -35,11 +35,12 @@ export const USER: User = {
     'Machine Learning',
     'Data Science',
   ],
+  resume: '/resume_shr.pdf',
   about: `
 - **B.Tech AI & ML Student** passionate about building software, AI solutions, and digital products.
 - Experienced with **Flutter**, **Python**, **Next.js**, and modern development tools.
 - Focused on creating scalable, user-friendly, and impactful applications.
-- Founder of **R3CTR**, creator of **[KTU Hub](https://ktuhub.site)**, and **[PaperLab](https://paperlab.r3actr.work/)**.
+- Co-founder of **R3ACTR**, creator of **[KTU Hub](https://ktuhub.site)**, and **[PaperLab](https://paperlab.r3actr.work/)**.
   `,
   avatar: '/dp.jpg',
   socialLinks: {

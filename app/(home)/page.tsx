@@ -9,6 +9,7 @@ import { Experiences } from '@/features/portfolio/components/experiences';
 import { Overview } from '@/features/portfolio/components/overview';
 import { ProfileHeader } from '@/features/portfolio/components/profile-header';
 import { Projects } from '@/features/portfolio/components/projects';
+import { Research } from '@/features/portfolio/components/research';
 import { SocialLinks } from '@/features/portfolio/components/social-links';
 import { TechStack } from '@/features/portfolio/components/tech-stack';
 import { USER } from '@/features/portfolio/data/user';
@@ -45,6 +46,9 @@ export default function Page() {
         <TailwindSeparator />
 
         <TechStack />
+        <TailwindSeparator />
+
+        <Research />
         <TailwindSeparator />
 
         <Experiences />
